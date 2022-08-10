@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EE4FA350289A80570063EBA5 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = EE4FA34F289A80570063EBA5 /* CodeScanner */; };
+		EEA25E19289AB4A100122F9E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA25E18289AB4A100122F9E /* Prospect.swift */; };
+		EEA25E1B289AD27300122F9E /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA25E1A289AD27300122F9E /* ProspectsView.swift */; };
+		EEA25E1D289AD74800122F9E /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA25E1C289AD74800122F9E /* RecipesView.swift */; };
 		EEE7EF23288A66CD00F376D5 /* scoop_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7EF22288A66CD00F376D5 /* scoop_appApp.swift */; };
 		EEE7EF25288A66CD00F376D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE7EF24288A66CD00F376D5 /* ContentView.swift */; };
 		EEE7EF27288A66CE00F376D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE7EF26288A66CE00F376D5 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEA25E18289AB4A100122F9E /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		EEA25E1A289AD27300122F9E /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		EEA25E1C289AD74800122F9E /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		EEE7EF1F288A66CD00F376D5 /* scoop-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scoop-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE7EF22288A66CD00F376D5 /* scoop_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoop_appApp.swift; sourceTree = "<group>"; };
 		EEE7EF24288A66CD00F376D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 				EEE7EF24288A66CD00F376D5 /* ContentView.swift */,
 				EEE7EF26288A66CE00F376D5 /* Assets.xcassets */,
 				EEE7EF28288A66CF00F376D5 /* Preview Content */,
+				EEA25E18289AB4A100122F9E /* Prospect.swift */,
+				EEA25E1A289AD27300122F9E /* ProspectsView.swift */,
+				EEA25E1C289AD74800122F9E /* RecipesView.swift */,
 			);
 			path = "scoop-app";
 			sourceTree = "<group>";
@@ -304,7 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA25E1B289AD27300122F9E /* ProspectsView.swift in Sources */,
 				EEE7EF25288A66CD00F376D5 /* ContentView.swift in Sources */,
+				EEA25E1D289AD74800122F9E /* RecipesView.swift in Sources */,
+				EEA25E19289AB4A100122F9E /* Prospect.swift in Sources */,
 				EEE7EF23288A66CD00F376D5 /* scoop_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +479,7 @@
 				DEVELOPMENT_TEAM = R5955V6BN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan Barcodes and Bills";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -496,6 +509,7 @@
 				DEVELOPMENT_TEAM = R5955V6BN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan Barcodes and Bills";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
