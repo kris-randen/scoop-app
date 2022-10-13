@@ -13,26 +13,30 @@ struct ContentView: View {
         ZStack {
             ProspectsView()
             VStack {
-                HStack {
-                    Image("scoop_logo_png_180")
-                    Spacer()
-                }
-                .padding(.horizontal, UIScreen.main.bounds.width / 15)
+                scoopLogoLeftIdented
                 Spacer()
-                Button {
-                    //
-                } label: {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(Color(UIColor(red: 164/255, green: 0, blue: 0, alpha: 1)))
-                            .frame(width: UIScreen.main.bounds.width / 6, height: UIScreen.main.bounds.width / 6)
-                        Image(systemName: "list.bullet.rectangle.fill")
-                            .font(.largeTitle.weight(.ultraLight))
-                            .tint(Color(UIColor(red: 244/255, green: 189/255, blue: 42/255, alpha: 1)))
-                    }
-                }
-
+                recipeButton
             }
+        }
+    }
+    
+    var scoopLogoLeftIdented: some View = HStack {
+        Image("scoop_logo_png_180")
+        Spacer()
+    }
+    .padding(.horizontal, UIScreen.main.bounds.width / 15)
+
+    
+    var recipeButton: some View = Button {
+        //
+    } label: {
+        ZStack {
+            Circle()
+                .foregroundColor(Color(UIColor(red: 164/255, green: 0, blue: 0, alpha: 1)))
+                .frame(width: UIScreen.main.bounds.width / 6, height: UIScreen.main.bounds.width / 6)
+            Image(systemName: "list.bullet.rectangle.fill")
+                .font(.largeTitle.weight(.ultraLight))
+                .tint(Color(UIColor(red: 244/255, green: 189/255, blue: 42/255, alpha: 1)))
         }
     }
 }
